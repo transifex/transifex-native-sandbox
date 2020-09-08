@@ -23,7 +23,7 @@ But if you are a words person here is the [documentation](https://docs.transifex
  
   :ok_hand: You are all set. Your page is live and translated.
   
- Note: The i18n syntax is the same across programming languages so you can share strings across apps and programming languages
+ Note: The i18n syntax is the same across programming languages so you can share strings and translations across programming languages
  
  Note: Transifex Native is open source and can be easily ported to other languages.
  
