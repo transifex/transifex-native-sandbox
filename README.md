@@ -31,7 +31,7 @@ But if you are a words person here is the [documentation](https://docs.transifex
 
 
 # Please share you feedback with us?
-Please create an [issue](https://github.com/transifex/transifex-native-sandbox/issues/new)! We would love to here what you have to say!
+Please create an [issue](https://github.com/transifex/transifex-native-sandbox/issues/new), we would love to here what you have to say!
 
 # FAQs
 You can find the FAQs in our [community](https://community.transifex.com/c/transifex-native/17)
