@@ -18,9 +18,8 @@ But if you are a words person here is the [documentation](https://docs.transifex
   If you are not up to it we've built a script to do it for you. Just do ```sh run.sh```
   
 
-  - [x] Step 3: Push your strings to Transifex with this <command>
-
-  Note :We've enable MT so that you don't have to do the translations yourself.
+  - [x] Step 3: Push your strings to Transifex with this <command>. We've enable MT so that you don't have to do the translations yourself.
+   
    
  
   :ok_hand: You are all set. Your page is live and translated.
