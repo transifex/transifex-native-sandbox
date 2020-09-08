@@ -41,7 +41,7 @@ You can find the FAQs in our [community](https://community.transifex.com/c/trans
 
 [Blogposts about Transifex Native](https://www.transifex.com/blog/category/tx-native/)
 
-[Guide to port Transifex Native to new programming languages](https://transifex.github.io/native-specs/)
+[A guide to port Transifex Native to new programming languages](https://transifex.github.io/native-specs/)
 
 
 
