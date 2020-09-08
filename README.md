@@ -25,7 +25,7 @@ But if you are a words person here is the [documentation](https://docs.transifex
   
  Note: The i18n syntax is the same across programming languages so you can share strings and translations across programming languages
  
- Note: Transifex Native is open source and can be easily ported to other languages.
+ Note: Transifex Native is open source and can be easily ported to other languages. Check the resources section below.
  
 
 
@@ -42,6 +42,6 @@ You can find the FAQs in our [community](https://community.transifex.com/c/trans
 
 [A guide to port Transifex Native to new programming languages](https://transifex.github.io/native-specs/)
 
-Note: You can share the experience using this github webpage. Translate in transifex, refresh the github webpage and see your translation live on the fly.
+Share the experience with others using this github webpage. Translate in transifex, refresh the github webpage and see your translation live on the fly.
 
 
