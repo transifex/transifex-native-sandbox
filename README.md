@@ -3,12 +3,11 @@ A collection of sample applications integrated with transifex-native
 
 # What is Transifex Native?
 
-A new way to localise software - no files no deployments. A video(link) is better than 1000 words!
-Are you a words person? Here is the [documentation](https://docs.transifex.com/transifex-native-sdk-overview/introduction).
-
-You can see it in action in these github webpages. Translate in transifex, refresh the github webpage and see your translation live on the fly.
+A new way to localise software - no files no deployments. A [video](though) is worth a thousand words!
+But if you are a words person here is the [documentation](https://docs.transifex.com/transifex-native-sdk-overview/introduction).
 
 # Want to try it out yourself?
+  
   Step 1: Clone the repo of your preference (Python, django, JS, React or React Native)
 
   Step 2: Set things up using this guide: it's literally 3 commands. 
@@ -18,7 +17,7 @@ You can see it in action in these github webpages. Translate in transifex, refre
 
   Step 3: Push your strings to Transifex with this <command>
 
-  We've enable MT so that you don't have to do the translations yourself.
+  Note :We've enable MT so that you don't have to do the translations yourself.
   
   Step 4: Pull your translations.
  
@@ -27,6 +26,9 @@ You can see it in action in these github webpages. Translate in transifex, refre
  Note: The i18n syntax is the same across programming languages so you can share strings across apps and programming languages
  
  Note: Transifex Native is open source and can be easily ported to other languages.
+ 
+ Note: You can share the experience with your localisation team: Translate in transifex, refresh the github webpage and see your translation live on the fly.
+
 
 # Care to share you feedback with us?
 Please leave a comment! We would love to here what you have to say!
@@ -34,8 +36,11 @@ Please leave a comment! We would love to here what you have to say!
 # FAQs
 
 # Other Resources
-Links to guides, blog posts, porting guide etc
+[Transifex Native Documentation](https://docs.transifex.com/transifex-native-sdk-overview/introduction)
 
+[Blogposts about Transifex Native](https://www.transifex.com/blog/category/tx-native/)
+
+[Guide to port Transifex Native to new programming languages](https://transifex.github.io/native-specs/)
 
 
 
