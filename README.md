@@ -13,9 +13,7 @@ But if you are a words person here is the [documentation](https://docs.transifex
 
 
   - [x] Step 2: Set things up using the guide included in each folder mentioned in step 2. it's literally 3 commands. 
-  <ADD GUIDE here>
-
-  If you are not up to it we've built a script to do it for you. Just do ```sh run.sh```
+        If you are not up to it we've built a script to do it for you. Just do ```sh run.sh```
   
 
   - [x] Step 3: Push your strings to Transifex with this <command>. We've enable MT so that you don't have to do the translations yourself.
