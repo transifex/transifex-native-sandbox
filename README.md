@@ -3,7 +3,7 @@ A collection of sample applications integrated with transifex-native
 
 # What is Transifex Native?
 
-A new way to localise software within the code - no files no deployments. A [video](though) is worth a thousand words!
+A new way to localise software within the code - no files no deployments. A [video](https://www.youtube.com/watch?v=SzEOCKNjRZU) is worth a thousand words!
 But if you are a words person here is the [documentation](https://docs.transifex.com/transifex-native-sdk-overview/introduction).
 
 # Try it out yourself
