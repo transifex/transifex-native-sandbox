@@ -8,18 +8,18 @@ But if you are a words person here is the [documentation](https://docs.transifex
 
 # Try it out yourself
   
-  Step 1: Clone the repo of your preference (Python, django, JS, React or React Native)
+  - [x] Step 1: Clone the repo of your preference (Python, django, JS, React or React Native)
 
-  Step 2: Set things up using this guide: it's literally 3 commands. 
+  - [x] Step 2: Set things up using this guide: it's literally 3 commands. 
   <ADD GUIDE here>
 
   If you are not up to it we've built a script to do it for you. Just do <command>
 
-  Step 3: Push your strings to Transifex with this <command>
+  - [x] Step 3: Push your strings to Transifex with this <command>
 
   Note :We've enable MT so that you don't have to do the translations yourself.
   
-  Step 4: Pull your translations.
+  - [x] Step 4: Pull your translations.
  
   :ok_hand: You are all set. Your page is live and translated.
   
