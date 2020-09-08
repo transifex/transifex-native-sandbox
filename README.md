@@ -24,7 +24,9 @@ But if you are a words person here is the [documentation](https://docs.transifex
    
  
   :ok_hand: You are all set. Your page is live and translated.
-  
+  <br/>
+  <br/>
+  <br/>
   
   :metal: The i18n syntax is the same across programming languages so you can share strings and translations across programming languages
  
