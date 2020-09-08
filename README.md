@@ -34,7 +34,7 @@ But if you are a words person here is the [documentation](https://docs.transifex
 Please leave a comment! We would love to here what you have to say!
 
 # FAQs
-We've moved the FAQs about Transifex Native in our [community](https://community.transifex.com/c/transifex-native/17)
+You can fins the FAQs about Transifex Native in our [community](https://community.transifex.com/c/transifex-native/17)
 
 # Other Resources
 [Transifex Native Documentation](https://docs.transifex.com/transifex-native-sdk-overview/introduction)
