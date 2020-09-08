@@ -6,7 +6,7 @@ A collection of sample applications integrated with transifex-native
 A new way to localise software - no files no deployments. A [video](though) is worth a thousand words!
 But if you are a words person here is the [documentation](https://docs.transifex.com/transifex-native-sdk-overview/introduction).
 
-# Want to try it out yourself?
+# Try it out yourself
   
   Step 1: Clone the repo of your preference (Python, django, JS, React or React Native)
 
@@ -30,11 +30,11 @@ But if you are a words person here is the [documentation](https://docs.transifex
  Note: You can share the experience with your localisation team: Translate in transifex, refresh the github webpage and see your translation live on the fly.
 
 
-# Care to share you feedback with us?
+# Please share you feedback with us?
 Please create an [issue](https://github.com/transifex/transifex-native-sandbox/issues/new)! We would love to here what you have to say!
 
 # FAQs
-You can fins the FAQs about Transifex Native in our [community](https://community.transifex.com/c/transifex-native/17)
+You can find the FAQs in our [community](https://community.transifex.com/c/transifex-native/17)
 
 # Other Resources
 [Transifex Native Documentation](https://docs.transifex.com/transifex-native-sdk-overview/introduction)
