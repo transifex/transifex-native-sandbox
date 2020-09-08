@@ -19,6 +19,9 @@ But if you are a words person here is the [documentation](https://docs.transifex
   - [x] Step 3: Push your strings to Transifex with this <command>. We've enable MT so that you don't have to do the translations yourself.
    
    
+   
+   
+   
  
   :ok_hand: You are all set. Your page is live and translated.
   
