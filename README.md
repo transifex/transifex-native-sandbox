@@ -9,20 +9,17 @@ But if you are a words person here is the [documentation](https://docs.transifex
 # Try it out yourself
 
   
-  - [x] Step 1: Clone the repo and go to folder of your preference. There is one for each of the following languages / frameworks: Python, django, JS, React, React Native.
+  - [x] Step 1: Clone the repo and go to the folder of your preference. There is one for each of the following languages / frameworks: Python, django, JS, React, React Native.
 
 
-  - [x] Step 2: Set things up using the guide included in each folder mentioned in step 2. it's literally 3 commands. 
+  - [x] Step 2: Set things up using the guide included in each folder mentioned in the previous step. it's literally 3 commands. 
         If you are not up to it we've built a script to do it for you. Just do ```sh run.sh```
   
 
-  - [x] Step 3: Push your strings to Transifex with this <command>. We've enable MT so that you don't have to do the translations yourself.
+  - [x] Step 3: Push your strings to Transifex with this <command>. We've enable MT for the purposes of the testing so that you don't have to do the translations yourself.
    
    
-   
-   
-   
- 
+
   :ok_hand: You are all set. Your page is live and translated.
   <br/>
   <br/>
