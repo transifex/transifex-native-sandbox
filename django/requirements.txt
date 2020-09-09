@@ -1,0 +1,2 @@
+Django==1.11.18
+transifex-python==0.3.2
