@@ -16,7 +16,7 @@ But if you are a words person here is the [documentation](https://docs.transifex
         If you are not up to it we've built a script to do it for you. Just do ```sh run.sh```
   
 
-  - [x] Step 3: Push your strings to Transifex with this <command>. We've enable MT for the purposes of the testing so that you don't have to do the translations yourself.
+  - [x] Step 3: Push your strings to Transifex with this <command>. The repo is linked to a public Transifex project - which you can join automatically. We've also enable Machine Translation for the purposes of the test so that you don't have to do the translations yourself.
    
    
 
