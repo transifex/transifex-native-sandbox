@@ -9,7 +9,7 @@ But if you are a words person here is the [documentation](https://docs.transifex
 # Try it out yourself
 
   
-  - [x] Step 1: Clone the repo and go to the folder of your preference. There is one for each of the following languages / frameworks: Python, django, JS, React, React Native.
+  - [x] Step 1: Clone the repo and go to the folder of your preference. There is one for each of the following languages / frameworks: django and ReactJS (Python, JS, and React Native folders to be added soon).
 
 
   - [x] Step 2: Set things up using the guide included in each folder mentioned in the previous step. it's literally 3 commands. 
