@@ -122,4 +122,5 @@ USE_I18N = True
 USE_L10N = True
 
 TRANSIFEX_TOKEN = '1/066926bd75f0d9e52fce00c2208ac791ca0cd2c1'
+TRANSIFEX_SECRET = '1/f5aca18b0d44d660976a69617d9a06edf3fb9c47'
 # TRANSIFEX_MISSING_POLICY = 'transifex.native.rendering.PseudoTranslationPolicy'

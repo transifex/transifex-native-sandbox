@@ -6,7 +6,7 @@ with [Transifex Native](https://www.transifex.com/native/).
 
 You need a "reasonably recent" version of node/npm to run this application.
 
-In order to get started, you can run
+In order to get started, you can run:
 
 ```sh
 sh run.sh
