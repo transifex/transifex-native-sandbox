@@ -44,6 +44,4 @@ You can find the FAQs in our [community](https://community.transifex.com/c/trans
 
 [A guide to port Transifex Native to new programming languages](https://transifex.github.io/native-specs/)
 
-Share the experience with others using this github webpage. Translate in transifex, refresh the github webpage and see your translation live on the fly.
-
 
