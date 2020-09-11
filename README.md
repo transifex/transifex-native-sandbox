@@ -6,8 +6,10 @@ A collection of sample applications integrated with transifex-native
 A new way to localise software within the code - no files no deployments. A [video](https://www.youtube.com/watch?v=SzEOCKNjRZU) is worth a thousand words!
 But if you are a words person here is the [documentation](https://docs.transifex.com/transifex-native-sdk-overview/introduction).
 <br/>
+<p align="center">
+  <img src="https://cdn.transifex.com/docs-images/L10n_aware_flow.png" height=400/>
+</p>
 
-<img src="https://cdn.transifex.com/docs-images/L10n_aware_flow.png" height=400/>
 
 # Try it out yourself
 
