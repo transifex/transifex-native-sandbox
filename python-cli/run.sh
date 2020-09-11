@@ -5,8 +5,8 @@ if [ ! -d venv ]; then
 fi;
 
 source venv/bin/activate
-if [ ! -d venv/lib/python*/site-packages/transifex ]; then
+if [ ! -d venv/lib/python*/site-packages/pyfiglet ]; then
   pip install -r requirements.txt
 fi
-python manage.py migrate
-python manage.py runserver
+
+python main.py
