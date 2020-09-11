@@ -1,5 +1,5 @@
 This is a [Django](https://www.djangoproject.com/) application integrated with
-[Transifex Native](https://www.transifex.com/native/).
+[Transifex Native](https://docs.transifex.com/transifex-native-sdk-overview/introduction).
 
 ## Getting started
 
