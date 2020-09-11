@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import { Button, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Button, Text, TouchableOpacity, TextInput, View } from 'react-native';
 
-import {tx} from '@transifex/native';
+import nodeNative, {tx} from '@transifex/native';
 import {T, useLanguages} from '@transifex/react';
 
 tx.init({
@@ -17,80 +17,75 @@ export default function App() {
 
   const languages = useLanguages();
 
+  const LangButton = ({ onPress, title }) => (
+    <TouchableOpacity onPress={onPress} style={styles.buttonContainer}>
+      <Text style={styles.buttonText}>{title}</Text>
+    </TouchableOpacity>
+  );
+
   return (
-    <View style={{ flex: 1, backgroundColor: 'white', padding: 20 }}>
-      <View style={{ flex: 1, justifyContent: 'center' }}>
-        <Text>Transifex Native playground</Text>
+    <View style={styles.container}>
+      <View>
+        <Text style={styles.heading}>Transifex Native playground</Text>
       </View>
-      <View style={{ flex: 8, backgroundColor: '#ddf' }}>
+      <View style={{ flex: 8 }}>
         <Row>
-          <Text>Static content:</Text>
-          <Text><T _str="Hello world" /></Text>
+          <Text style={styles.row_heading}>Static content</Text>
+          <Text style={styles.row_content}><T _str="Hello world" /></Text>
         </Row>
         <Row>
-          <View style={{ flex: 1 }}>
-            <Text>Dynamic content:</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: 'row' }}>
-            <View style={{ flex: 1, backgroundColor: '#eef' }}>
-              <TextInput onChangeText={setString} value={string} />
-            </View>
-            <View style={{ flex: 2 }}>
-              <Text>
-                <T _str="Hello {username}" username={string} />
-              </Text>
-            </View>
+          <Text style={styles.row_heading}>Dynamic content</Text>
+          <View style={styles.row_content}>
+            <TextInput
+              style={styles.inputText}
+              onChangeText={setString}
+              value={string} />
+            <Text>
+              <T _str="Hello {username}" username={string} />
+            </Text>
           </View>
         </Row>
         <Row>
-          <View style={{ flex: 1 }}>
-            <Text>Pluralized:</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: 'row' }}>
-            <View style={{ flex: 1, backgroundColor: '#eef' }}>
-              <TextInput
-                onChangeText={setNumber}
-                value={number}
-                keyboardType="number-pad" />
-            </View>
-            <View style={{ flex: 2 }}>
-              <Text>
-                <T
-                  _str="{cnt, plural, one {You have one message} other {You have # messages}}"
-                  cnt={number} />
-              </Text>
-            </View>
+          <Text style={styles.row_heading}>Pluralized</Text>
+          <View style={styles.row_content}>
+            <TextInput
+              style={styles.inputText}
+              onChangeText={setNumber}
+              value={number}
+              keyboardType="number-pad" />
+            <Text>
+              <T
+                _str="{cnt, plural, one {You have one message} other {You have # messages}}"
+                cnt={number} />
+            </Text>
           </View>
         </Row>
         <Row>
-          <View style={{ flex: 1 }}>
-            <Text>Choice:</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: 'row' }}>
-            <View style={{ flex: 1, backgroundColor: '#eef' }}>
-              <TextInput onChangeText={setChoice} value={choice} />
-            </View>
-            <View style={{ flex: 2 }}>
-              <Text>
-                <T
-                  _str="{gender, select, male {{username} is a boy} female {{username} is a girl} other {{username} is a person}}"
-                  username={string}
-                  gender={choice} />
-              </Text>
-            </View>
+          <Text style={styles.row_heading}>Choice</Text>
+          <View style={styles.row_content}>
+            <TextInput
+              style={styles.inputText}
+              onChangeText={setChoice}
+              value={choice} />
+            <Text>
+              <T
+                _str="{gender, select, male {{username} is a boy} female {{username} is a girl} other {{username} is a person}}"
+                username={string}
+                gender={choice} />
+            </Text>
           </View>
         </Row>
-        <Row>
-          <View style={{ flexDirection: 'row' }}>
-            <Button title="English" onPress={() => tx.setCurrentLocale('en')} />
-            {languages.map(({code, name}) => (
-              <Button
-                key={code}
-                title={name}
-                onPress={() => tx.setCurrentLocale(code)} />
-            ))}
-          </View>
-        </Row>
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 5}}>
+         <LangButton
+          title="English"
+          onPress={() => tx.setCurrentLocale('en')} />
+          {languages.map(({code, name}) => (
+            <LangButton
+              key={code}
+              title={name}
+              onPress={() => tx.setCurrentLocale(code)} />
+          ))}
+        </View>
       </View>
     </View>
   );
@@ -98,8 +93,62 @@ export default function App() {
 
 function Row({ children }) {
   return (
-    <View style={{ flex: 1, backgroundColor: '#ccf', margin: 10 }}>
+    <View style={styles.row}>
       {children}
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#fff',
+    padding: 20,
+    maxWidth: 700,
+    width: '100%',
+    flex: 1,
+  },
+  heading: {
+    fontSize: 18,
+    marginBottom: 15,
+  },
+  row: {
+    borderBottomLeftRadius: 3,
+    borderBottomRightRadius: 3,
+    backgroundColor: '#f4f5f7',
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  row_heading: {
+    borderTopLeftRadius: 3,
+    borderTopRightRadius: 3,
+    fontSize: 16,
+    backgroundColor: '#84CCFF',
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+  },
+  row_content: {
+    paddingHorizontal: 15,
+    paddingVertical: 15,
+  },
+  inputText: {
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderStyle: 'solid',
+    borderRadius: 3,
+    padding: 6,
+    marginBottom: 10,
+  },
+  buttonContainer: {
+    marginRight: 10,
+    marginBottom: 10,
+    backgroundColor: '#0086E6',
+    borderRadius: 3,
+    textAlign: 'center',
+    padding: 12,
+  },
+  buttonText: {
+    color: '#fff',
+    textTransform: 'uppercase',
+  }
+});
