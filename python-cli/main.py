@@ -5,6 +5,12 @@ from PyInquirer import prompt
 
 from transifex.native import init as tx_init
 from transifex.native import tx
+from transifex.native.rendering import AbstractRenderingPolicy
+
+
+class MissingPolicy(AbstractRenderingPolicy):
+    def get(self, source_string):
+        return "{} (translation missing)".format(source_string)
 
 
 def main():
@@ -14,7 +20,8 @@ def main():
     print("Fetching translations... ", end="")
     sys.stdout.flush()
     tx_init(token="1/066926bd75f0d9e52fce00c2208ac791ca0cd2c1",
-            languages=['en', 'el', 'de', 'es', 'fr', 'pt_BR'])
+            languages=['en', 'el', 'de', 'es', 'fr', 'pt_BR'],
+            missing_policy=MissingPolicy())
     tx.fetch_translations()
     print("Done\n")
 
