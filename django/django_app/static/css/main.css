@@ -1,0 +1,164 @@
+html, body, #root {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+}
+body {
+  font: 14px "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+h1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 10px;
+}
+h3 {
+  font-size: 16px;
+  display: block;
+  background: #84ccff;
+  padding: 10px 15px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 400;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.container {
+  box-sizing: border-box;
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: row;
+}
+.innerContainer .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.rowHoriz {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 100%;
+}
+.columnHoriz {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 10px;
+}
+.columnHoriz h3 {
+  display: flex;
+  min-width: 25%;
+  border-radius: 3px 0 0 3px;
+}
+.columnHoriz div {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px 15px;
+  background: #f4f5f7;
+  border-radius: 0 3px 3px 0;
+  word-break: break-word;
+}
+.separator {
+  border: 1px solid rgba(142, 156, 179, .5);
+  margin: 10px 10px 5px 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 10px;
+}
+.column div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 15px;
+  background: #f4f5f7;
+  border-radius: 0 0 3px 3px;
+  word-break: break-word;
+}
+.forms {
+  align-items: baseline;
+}
+form {
+  text-align: right;
+  border-right: 2px solid rgba(142, 156, 179, .5);
+  padding: 0 20px 0 0;
+  margin: 0 20px 0 0;
+}
+input:not([type="submit"]), select {
+  padding:6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  margin-bottom: 10px;
+  min-width: 180px;
+}
+label {
+  display: inline-block;
+  min-width: 70px;
+  text-align: left;
+}
+.button {
+  border: 0;
+  border-radius: 3px;
+  background: #0086E6;
+  padding: 10px 12px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.picker {
+  text-align: left;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.picker select {
+  margin: 0;
+}
+.picker .button {
+  padding: 8px 12px;
+}
+
+@media only screen and (max-width: 940px) {
+  form {
+    text-align: left;
+  }
+  label {
+    margin-bottom: 3px;
+  }
+  .picker .button {
+    margin-top: 10px;
+  }
+  .innerContainer .wrapper {
+    width: 100%;
+  }
+  .innerContainer, .row {
+    flex-direction: column;
+  }
+  .columnHoriz h3 {
+    min-width: 30%;
+  }
+}

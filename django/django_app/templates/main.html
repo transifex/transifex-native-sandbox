@@ -1,80 +1,92 @@
 {% load i18n %}
+{% load staticfiles %}
 {% load transifex %}
 
-<h1>Python strings:</h1>
-<table>
-  <tbody>
-    {% for label, string in python_strings %}
-      <tr>
-        <th>{{ label }}</th>
-        <td>{{ string|safe }}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<link media="screen" href="{% static "css/main.css" %}" type="text/css" rel="stylesheet" />
 
-<hr />
+<div class="container">
+  <div class="innerContainer">
+    <div class="wrapper">
+      <h1>Python strings</h1>
+      <div class="rowHoriz">
+        {% for label, string in python_strings %}
+          <div class="columnHoriz">
+            <h3>{{ label }}</h3>
+            <div>{{ string|safe }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="wrapper">
+      <h1>Django template strings</h1>
+      <div class="row">
+        <div class="column">
+            <h3>Static content</h3>
+            <div>{% t "Hello world" %}</div>
+        </div>
+        <div class="column">
+          <h3>Dynamic content</h3>
+          <div>{% t "Hello {username}" username=params.string %}</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3>Pluralized</h3>
+          <div>{% t "{cnt, plural, one {You have one message} other {You have # messages}}" cnt=params.number %}</div>
+        </div>
+        <div class="column">
+          <h3>Choice</h3>
+          <div>{% t "{username} is a {gender, select, male {boy} female {girl} other {other}}" username=params.string gender=params.choice %}</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3>Raw HTML</h3>
+          <div>
+            {% ut '<em style="color:red">Hello</em> <strong style="color:blue">{username}</strong>' username=params.string %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<h1>Django template strings:</h1>
-<table>
-  <tbody>
-    <tr>
-      <th>Static content:</th>
-      <td>{% t "Hello world" %}</td>
-    </tr>
-    <tr>
-      <th>Dynamic content:</th>
-      <td>{% t "Hello {username}" username=params.string %}</td>
-    </tr>
-    <tr>
-      <th>Pluralized:</th>
-      <td>{% t "{cnt, plural, one {You have one message} other {You have # messages}}" cnt=params.number %}</td>
-    </tr>
-    <tr>
-      <th>Choice:</th>
-      <td>{% t "{username} is a {gender, select, male {boy} female {girl} other {other}}" username=params.string gender=params.choice %}</td>
-    </tr>
-    <tr>
-      <th>Raw HTML:</th>
-      <td>
-        {% ut '<em style="color:red">Hello</em> <strong style="color:blue">{username}</strong>' username=params.string %}
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <div class="separator"></div>
 
-<hr />
+  <div class="wrapper">
+    <h1>Lets change some parameters</h1>
+    <div class="rowHoriz">
+      <div class="columnHoriz forms">
+        <form action="/" method="get">
+          <label>String:</label> <input type="text" name="string" value="{{ params.string }}" />
+          <br />
+          <label>Number:</label> <input type="number" name="number" value="{{ params.number }}" />
+          <br />
+          <label>Choice:</label>
+          <select name="choice">
+            <option value="male" {% if params.choice == "male" %}selected{% endif %}>Male</option>
+            <option value="female" {% if params.choice == "female" %}selected{% endif %}>Female</option>
+            <option value="other" {% if params.choice == "other" %}selected{% endif %}>Other</option>
+          </select>
+          <br />
+          <input class="button" type="submit" value="submit">
+        </form>
+        <form class="picker" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+          <label>Language picker: </label>
+          <input name="next" type="hidden" value="{{ request.path }}" />
+          <select name="language">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+              <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+              </option>
+            {% endfor %}
+          </select>
+          <input class="button" type="submit" value="Go" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h1>Lets change some parameters</h1>
-<form action="/" method="get">
-  String: <input type="text" name="string" value="{{ params.string }}" />
-  <br />
-  Number: <input type="number" name="number" value="{{ params.number }}" />
-  <br />
-  Choice:
-  <select name="choice">
-    <option value="male" {% if params.choice == "male" %}selected{% endif %}>Male</option>
-    <option value="female" {% if params.choice == "female" %}selected{% endif %}>Female</option>
-    <option value="other" {% if params.choice == "other" %}selected{% endif %}>Other</option>
-  </select>
-  <br />
-  <input type="submit" value="submit">
-</form>
-
-<hr />
-
-<h1>Language picker:</h1>
-<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-  <input name="next" type="hidden" value="{{ request.path }}" />
-  <select name="language">
-    {% get_current_language as LANGUAGE_CODE %}
-    {% get_available_languages as LANGUAGES %}
-    {% get_language_info_list for LANGUAGES as languages %}
-    {% for language in languages %}
-      <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-        {{ language.name_local }} ({{ language.code }})
-      </option>
-    {% endfor %}
-  </select>
-  <input type="submit" value="Go" />
-</form>
