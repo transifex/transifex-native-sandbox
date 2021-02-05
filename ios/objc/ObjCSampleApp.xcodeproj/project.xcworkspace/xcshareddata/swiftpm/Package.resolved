@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "transifex",
+        "repositoryURL": "https://github.com/transifex/transifex-swift/",
+        "state": {
+          "branch": null,
+          "revision": "a326fbf8bc8023b8cc09f31beffebf82faadeebc",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
