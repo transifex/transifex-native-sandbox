@@ -6,7 +6,6 @@ import nodeNative, {tx} from '@transifex/native';
 import {T, useLanguages} from '@transifex/react';
 
 tx.init({
-  sourceLocale: 'en',
   token: '1/066926bd75f0d9e52fce00c2208ac791ca0cd2c1',
 });
 
