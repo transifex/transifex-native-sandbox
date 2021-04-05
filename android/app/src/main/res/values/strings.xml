@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">TxNativeSampleApp</string>
+
+    <string name="hello_world">Hello world</string>
+
+    <string name="hello_user">Hello %s</string>
+
+    <plurals name="new_messages">
+        <item quantity="one">You have %d new message</item>
+        <item quantity="other">You have %d new messages</item>
+    </plurals>
+
+    <string name="edit_text_hint">Type here</string>
+</resources>
