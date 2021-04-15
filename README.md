@@ -20,6 +20,7 @@ But if you are a words person here is the [documentation](https://docs.transifex
     - [React Native](https://github.com/transifex/transifex-native-sandbox/tree/master/react-native)
     - [Python](https://github.com/transifex/transifex-native-sandbox/tree/master/python-cli)
     - [iOS](https://github.com/transifex/transifex-native-sandbox/tree/master/ios)
+    - [Android](https://github.com/transifex/transifex-native-sandbox/tree/master/android)
 
     JS, node and others coming soon.
 
