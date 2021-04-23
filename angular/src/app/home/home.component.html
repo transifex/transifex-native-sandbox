@@ -1,0 +1,90 @@
+<div
+  class="bg-default centered width-small divider u-boxShadow-soft padding-1x full-height"
+>
+  <p class="small-text">
+    <a href="#/home">
+      <T str="home" key="text.home"></T>
+    </a>
+    &nbsp;
+    <a href="#/terms">
+      <T str="home" key="text.terms_of_service"></T>
+    </a>
+    &nbsp;
+    <a href="#/privacy">
+      <T str="home" key="text.privacy_policy"></T>
+    </a>
+    <a class="align-right" href="#/login">
+      <T str="logout" key="text.logout"></T>
+    </a>
+  </p>
+
+  <h1 class="marginBottom-2x">
+    <T str="home" key="text.home"></T>
+  </h1>
+
+  <p class="marginBottom-2x">
+    <label for="fullname" class="font-weight-bold"
+      ><T str="Full Name" key="label.full_name"></T
+    ></label>
+    <input
+      name="fullname"
+      (input)="fullNameChange($event)"
+      [value]="fullname"
+    />
+  </p>
+
+  <p>
+    <label for="pluralized" class="font-weight-bold"
+      ><T str="Pluralized" key="label.pluralized"></T
+    ></label>
+    <input
+      name="pluralized"
+      (input)="pluralizedChange($event)"
+      [value]="pluralized"
+    />
+  </p>
+
+  <p class="marginBottom-2x">
+    <T
+      str="{cnt, plural, one {You have # message} other {You have # messages}}"
+      key="home.pluralized"
+      [vars]="{ cnt: pluralized }"
+    ></T>
+  </p>
+
+  <p>
+    <label for="gender" class="font-weight-bold"
+      ><T str="Choose the gender to use" key="label.gender"></T
+    ></label>
+    <select name="gender" [value]="choice" (change)="genderChange($event)">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </p>
+
+  <p class="marginBottom-2x">
+    <T
+      str="{name} is a {gender, select, male {boy} female {girl} other {person}}"
+      key="home.gender"
+      [vars]="{ gender: choice, name: fullname }"
+    ></T>
+  </p>
+
+  <p class="marginBottom-2x">
+    <label class="font-weight-bold"
+      ><T str="HTML rendering" key="label.html_rendering"></T
+    ></label>
+    <UT
+      str="Hello, <b>{name}</b>, <em>how are you today?</em>"
+      key="home.salutation"
+      [sanitize]="useSanitize"
+      [vars]="{ name: fullname }"
+    ></UT>
+  </p>
+</div>
+
+<tx-language-picker
+  class="placeBottomLeft"
+  (localeChanged)="onLocaleChanged($event)"
+></tx-language-picker>

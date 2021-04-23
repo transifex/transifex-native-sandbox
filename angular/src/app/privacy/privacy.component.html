@@ -1,0 +1,45 @@
+<div class="bg-default centered width-small divider u-boxShadow-soft padding-1x full-height"> 
+  <p class="small-text">
+    <a href="#/home">
+      <T str="home" key="text.home"></T>
+    </a>
+    &nbsp;
+    <a href="#/terms">
+      <T str="home" key="text.terms_of_service"></T>
+    </a>
+    &nbsp;
+    <a href="#/privacy">
+      <T str="home" key="text.privacy_policy"></T>
+    </a>
+    <a class="align-right" href="#/login">
+      <T str="logout" key="text.logout"></T>
+    </a>
+  </p>
+
+  <h1 class="marginBottom-2x">
+    <T str="privacy policy" key="text.privacy_policy"></T>
+  </h1>
+
+    <p class="small-text text-justified">
+    <UT
+      str="We’ve prepared this Privacy Policy to help you (the individual who
+      uses this website, features, and services, or accesses available
+      information, or engages with us directly by email or telephone)
+      understand what are our information practices with respect to the
+      collection, use, and disclosure of information we collect from you
+      through our web application, our websites that link to this Privacy
+      Policy, and any other services we provide to our customers or end users
+      (collectively, the Service)."
+      key="text.privacy_policy_details"
+      [inline]="false"
+    ></UT>
+  </p>
+  <p class="padding-2x text-centered">
+    <img src="assets/images/privacy.svg" />
+  </p>
+</div>
+
+<tx-language-picker
+  class="placeBottomLeft"
+  (localeChanged)="onLocaleChanged($event)"
+></tx-language-picker>

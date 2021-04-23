@@ -1,0 +1,44 @@
+<div class="bg-default centered width-small divider u-boxShadow-soft padding-1x full-height">
+  <p class="small-text">
+    <a href="#/home">
+      <T str="home" key="text.home"></T>
+    </a>
+    &nbsp;
+    <a href="#/terms">
+      <T str="home" key="text.terms_of_service"></T>
+    </a>
+    &nbsp;
+    <a href="#/privacy">
+      <T str="home" key="text.privacy_policy"></T>
+    </a>
+    <a class="align-right" href="#/login">
+      <T str="logout" key="text.logout"></T>
+    </a>
+  </p>
+
+  <h1 class="marginBottom-2x">
+    <T str="terms of service" key="text.terms_of_service"></T>
+  </h1>
+
+  <p class="small-text text-justified">
+    <UT
+      str="These Terms and Conditions constitute a legally binding agreement 
+        made between you, whether personally or on behalf of an entity (“you”)
+        and [business entity name] (“we,” “us” or “our”), concerning your
+        access to and use of the [website name.com] website as well as any
+        other media form, media channel, mobile website or mobile application
+        related, linked, or otherwise connected thereto (collectively,
+        the “Site”)."
+      key="text.terms_details"
+      [inline]="false"
+    ></UT>
+  </p>
+  <p class="padding-2x text-centered">
+    <img src="assets/images/terms.jpg" />
+  </p>
+</div>
+
+<tx-language-picker
+  class="placeBottomLeft"
+  (localeChanged)="onLocaleChanged($event)"
+></tx-language-picker>
