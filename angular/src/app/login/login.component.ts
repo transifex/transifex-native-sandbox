@@ -16,9 +16,9 @@ export class LoginComponent implements OnInit {
   // Translations using decorator
   @T('Monday', { _key: 'text.monday' })
   weekday: string;
-  @T('terms of service', { _key: 'text.terms_of_service' })
+  @T('terms of service', { _key: 'text.terms_of_service_1' })
   terms: string;
-  @T('privacy policy', { _key: 'text.privacy_policy' })
+  @T('privacy policy', { _key: 'text.privacy_policy_1' })
   privacy: string;
 
   constructor(private translationService: TranslationService,

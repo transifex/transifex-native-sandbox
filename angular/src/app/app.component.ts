@@ -11,12 +11,12 @@ export class AppComponent {
 
   constructor(private translationService: TranslationService) {
     translationService.init({
-      token: '1/e41ce31df46f0526af6ea4931daa7718b3d7e843',
+      token: '1/066926bd75f0d9e52fce00c2208ac791ca0cd2c1',
     });
   }
 
   async ngOnInit() {
     await this.translationService.getLanguages();
-    await this.translationService.setCurrentLocale('el');
+    await this.translationService.setCurrentLocale('en');
   }
 }

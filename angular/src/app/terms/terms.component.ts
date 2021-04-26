@@ -10,9 +10,9 @@ import { Subscription } from 'rxjs';
 export class TermsComponent implements OnInit {
   @T('home', { _key: 'text.home' })
   home: string;
-  @T('terms of service', { _key: 'text.terms_of_service' })
+  @T('terms of service', { _key: 'text.terms_of_service_1' })
   terms: string;
-  @T('privacy policy', { _key: 'text.privacy_policy' })
+  @T('privacy policy', { _key: 'text.privacy_policy_1' })
   privacy: string;
 
   localeChangeSubscription: Subscription;
