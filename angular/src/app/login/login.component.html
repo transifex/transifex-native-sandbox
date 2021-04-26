@@ -1,0 +1,92 @@
+<div class="bg-default centered width-small divider u-boxShadow-soft padding-1x full-height">
+  <h1 class="marginBottom-2x">
+    <T str="Hi 👋! Welcome to Native Demo" key="text.main_title"></T>
+  </h1>
+
+  <p class="color-secondary">
+    <UT
+      str="It’s {weekday} today, and it is a fine day to try out Native!"
+      key="text.intro_message"
+      [vars]="{ weekday: weekday }"
+    ></UT>
+  </p>
+
+  <p class="color-secondary marginBottom-2x">
+    <T
+      str="Please log in to continue. You can use <em>admin@demo.io</em> for username and <em>123</em> for password."
+      key="text.login_message_instruction"
+      [sanitize]=true
+    ></T>
+  </p>
+
+  <!-- LOGIN FORM -->
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group marginBottom-2x">
+      <label for="username"><T str="Email" key="label.email"></T></label>
+      <input
+        type="text"
+        formControlName="username"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
+      />
+      <div *ngIf="submitted && f.username.errors" class="field-invalid">
+        <div *ngIf="f.username.errors.required">
+          <T str="Username is required" key="error.username"></T>
+        </div>
+      </div>
+    </div>
+    <div class="form-group marginBottom-2x">
+      <label for="password"><T str="Password" key="label.password"></T></label>
+      <input
+        type="password"
+        formControlName="password"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+      />
+      <div *ngIf="submitted && f.password.errors" class="field-invalid">
+        <div *ngIf="f.password.errors.required">
+          <T str="Password is required" key="error.password"></T>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="submitted && invalidCredentials" class="field-invalid marginBottom-2x">
+      <div *ngIf="invalidCredentials">
+        <T str="Invalid credentials" key="error.invalid_credentials"></T>
+      </div>
+    </div>
+
+    <button class="button marginBottom-1x" type="submit">
+      <T str="Login" key="button.login"></T>
+    </button>
+  </form>
+  <!-- LOGIN FORM END -->
+
+  <hr class="dividerBottom marginBottom-1x" />
+
+  <p class="small-text">
+    <T
+      str="By proceeding you agree to the {terms_of_services} and {privacy_policy}."
+      key="text.agree_message"
+      [sanitize]="true"
+      [vars]="{
+        terms_of_services: '<a href=\'#/terms\'>' + terms + '</a>',
+        privacy_policy: '<a href=\'#/privacy\'>' + privacy + '</a>'
+      }"
+    ></T>
+  </p>
+  <p class="small-text">
+    <UT
+      str="Copyright {year} by Transifex."
+      key="text.copyright"
+      [inline]="false"
+      comment="This is the current year"
+      [vars]="{ year: '&copy; 2020' }"
+    ></UT>
+  </p>
+</div>
+
+<tx-language-picker
+  className="placeBottomLeft lang-picker"
+  (localeChanged)="onLocaleChanged($event)"
+></tx-language-picker>
