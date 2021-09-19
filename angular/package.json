@@ -19,9 +19,9 @@
     "@angular/platform-browser": "~11.1.1",
     "@angular/platform-browser-dynamic": "~11.1.1",
     "@angular/router": "~11.1.1",
-    "@transifex/angular": "^0.12.1",
-    "@transifex/cli": "^0.12.1",
-    "@transifex/native": "^0.11.2",
+    "@transifex/angular": "^1.0.1",
+    "@transifex/cli": "^1.0.1",
+    "@transifex/native": "^1.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

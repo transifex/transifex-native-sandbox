@@ -1,23 +1,23 @@
 <div class="bg-default centered width-small divider u-boxShadow-soft padding-1x full-height">
   <p class="small-text">
     <a href="#/home">
-      <T str="home" key="text.home"></T>
+      <UT str="home" key="text.home" inline=true></UT>
     </a>
     &nbsp;
     <a href="#/terms">
-      <T str="terms of service" key="text.terms_of_service_1"></T>
+      <UT str="terms of service" key="text.terms_of_service_1" inline=true></UT>
     </a>
     &nbsp;
     <a href="#/privacy">
-      <T str="privacy policy" key="text.privacy_policy_1"></T>
+      <UT str="privacy policy" key="text.privacy_policy_1" inline=true></UT>
     </a>
     <a class="align-right" href="#/login">
-      <T str="logout" key="text.logout"></T>
+      <UT str="logout" key="text.logout" inline=true></UT>
     </a>
   </p>
 
   <h1 class="marginBottom-2x">
-    <T str="terms of service" key="text.terms_of_service_1"></T>
+    <UT str="terms of service" key="text.terms_of_service_1"></UT>
   </h1>
 
   <p class="small-text text-justified">
@@ -33,6 +33,16 @@
       [inline]="false"
     ></UT>
   </p>
+
+  <p class="small-text text-justified">
+    <UT
+      str="Thank you for using Transifex! These Terms of Service (the “Terms”)
+      govern your access to and use of the Transifex website (“Website”) and
+      the services offered on such Website (the “Services”), so please carefully
+      read them before using the Services."
+      key="text.terms_details_1" [inline]="false"></UT>
+  </p>
+
   <p class="padding-2x text-centered">
     <img src="assets/images/terms.jpg" />
   </p>
