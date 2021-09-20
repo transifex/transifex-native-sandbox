@@ -11,7 +11,7 @@ export class AppComponent {
 
   constructor(private translationService: TranslationService) {
     translationService.init({
-      token: '1/764a5790a9d3c41501d755ba9f6bd170d7584437',
+      token: '1/066926bd75f0d9e52fce00c2208ac791ca0cd2c1',
     });
   }
 
