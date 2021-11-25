@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { StyleSheet, Button, Text, TouchableOpacity, TextInput, View } from 'react-native';
 
-import nodeNative, {tx} from '@transifex/native';
+import {tx} from '@transifex/native';
 import {T, useLanguages} from '@transifex/react';
 
 tx.init({
@@ -75,9 +74,6 @@ export default function App() {
           </View>
         </Row>
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 5}}>
-         <LangButton
-          title="English"
-          onPress={() => tx.setCurrentLocale('en')} />
           {languages.map(({code, name}) => (
             <LangButton
               key={code}
