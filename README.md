@@ -13,11 +13,13 @@ But if you are a words person here is the [documentation](https://docs.transifex
 
 # Try it out yourself
 
-  
+
   - [x] Step 1: Clone the repo and go to the folder of your preference. There is one for each of the following languages / frameworks:
     - [django](https://github.com/transifex/transifex-native-sandbox/tree/master/django)
     - [ReactJS](https://github.com/transifex/transifex-native-sandbox/tree/master/reactjs)
     - [React Native](https://github.com/transifex/transifex-native-sandbox/tree/master/react-native)
+    - [Angular](https://github.com/transifex/transifex-native-sandbox/tree/master/angular)
+    - [Vue 2](https://github.com/transifex/transifex-native-sandbox/tree/master/vue2)
     - [Python](https://github.com/transifex/transifex-native-sandbox/tree/master/python-cli)
     - [iOS](https://github.com/transifex/transifex-native-sandbox/tree/master/ios)
     - [Android](https://github.com/transifex/transifex-native-sandbox/tree/master/android)
@@ -25,23 +27,23 @@ But if you are a words person here is the [documentation](https://docs.transifex
     JS, node and others coming soon.
 
 
-  - [x] Step 2: Set things up using the guide included in each folder mentioned in the previous step. it's literally 3 commands. 
+  - [x] Step 2: Set things up using the guide included in each folder mentioned in the previous step. it's literally 3 commands.
         If you are not up to it we've built a script to do it for you. Just do ```sh run.sh```
-  
+
 
   - [x] Step 3: :ok_hand: Play around. Push your strings to Transifex, translate, make edits and see your changes being applied on the fly. The repo is linked to a public Transifex project - which you can join automatically. We've also enable Machine Translation for the purposes of the test so that you don't have to do the translations yourself.
-   
-   
+
+
 
   <br/>
   <br/>
   <br/>
-  
+
   :metal: The i18n syntax is the same across programming languages so you can share strings and translations across programming languages
- 
- 
+
+
   :metal:	Transifex Native is open source and can be easily ported to other languages. Check the resources section below.
- 
+
 
 
 # Please share you feedback with us?
@@ -58,5 +60,3 @@ You can find the FAQs in our [community](https://community.transifex.com/c/trans
 [A guide to port Transifex Native to new programming languages](https://transifex.github.io/native-specs/)
 
 [Transifex Native Q&A - discussions](https://community.transifex.com/c/transifex-native/17)
-
-
