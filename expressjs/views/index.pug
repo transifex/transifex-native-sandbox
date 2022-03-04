@@ -1,0 +1,68 @@
+html
+  head
+    link(media='screen' href='/styles.css' type='text/css' rel='stylesheet')
+  body
+    div.container
+      div.innerContainer
+        div.wrapper
+          h1 Server-side strings
+          div.rowHoriz
+            each row in serverStrings
+              - var [label, string] = row
+              div.columnHoriz
+                h3= label
+                div!= string
+        div.wrapper
+          h1 Template strings
+          div.row
+            div.column
+              h3 Static content
+              div= t('Hello world')
+            div.column
+              h3 Dynamic content
+              div= t('Hello {username}', { username: params.string })
+          div.row
+            div.column
+              h3 Pluralized
+              div= t('{cnt, plural, one {You have one message} other {You have # messages}}', { cnt: params.number })
+            div.column
+              h3 Choice
+              div= t('{username} is a {gender, select, male {boy} female {girl} other {other}}', { username: params.string, gender: params.choice })
+          div.row
+            div.column
+              h3 Raw HTML
+              div!= ut('<em style="color:red">Hello</em> <strong style="color:blue">{username}</strong>', { username: params.string })
+
+      div.separator
+
+      div.wrapper
+        h1 Lets change some parameters
+        div.rowHoriz
+          div(class="columnHoriz forms")
+            form(action='' method='get')
+              label String:
+              input(type='text' name='string' value=params.string)
+              br
+
+              label Number:
+              input(type='number' name='number' value=params.number)
+              br
+
+              label Choice:
+              select(name='choice')
+                option(value='male' selected=params.choice === 'male') Male
+                option(value='female' selected=params.choice === 'female') Female
+                option(value='other' selected=params.choice === 'other') Other
+              br
+
+              input(class='button' type='submit' value='submit')
+
+            form(class='picker' action='/i18n' method='post')
+              label Language picker:
+              select(name='locale')
+                each language in tx.languages
+                  option(
+                    value=language.code
+                    selected=language.code === tx.currentLocale
+                    ) #{language.name} (#{language.code})
+              input(class='button' type='submit' value='Go')
