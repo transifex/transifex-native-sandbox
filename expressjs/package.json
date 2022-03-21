@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "node index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@transifex/cli": "^2.4.1",
-    "@transifex/express": "^2.4.1",
-    "@transifex/native": "^2.4.1",
+    "@transifex/cli": "^3.0.0",
+    "@transifex/express": "^3.0.0",
+    "@transifex/native": "^3.0.0",
     "body-parser": "^1.19.2",
     "cookie-parser": "^1.4.6",
     "express": "^4.17.3",
