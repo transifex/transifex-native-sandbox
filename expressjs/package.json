@@ -9,12 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@transifex/cli": "^3.0.0",
-    "@transifex/express": "^3.0.0",
-    "@transifex/native": "^3.0.0",
-    "body-parser": "^1.19.2",
+    "@transifex/cli": "^4.1.0",
+    "@transifex/express": "^4.1.0",
+    "@transifex/native": "^4.1.0",
+    "body-parser": "^1.20.0",
     "cookie-parser": "^1.4.6",
-    "express": "^4.17.3",
+    "express": "^4.18.1",
     "pug": "^3.0.2"
   }
 }
