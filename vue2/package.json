@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@transifex/cli": "^3.0.0",
-    "@transifex/native": "^3.0.0",
-    "@transifex/vue2": "^3.0.0",
+    "@transifex/cli": "^4.1.0",
+    "@transifex/native": "^4.1.0",
+    "@transifex/vue2": "^4.1.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },

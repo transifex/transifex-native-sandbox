@@ -1,0 +1,9 @@
+{
+    "Hello world": "Hello world",
+    "Hello {{username}}": "Hello {{username}}",
+    "messagesInfo": "You have {{count}} messages",
+    "messagesInfo_one": "You have one message",
+    "messagesInfo_other": "You have {{count}} messages",
+    "genderMessage_male": "{{username}} is a male",
+    "genderMessage_female": "{{username}} is a female"
+}
