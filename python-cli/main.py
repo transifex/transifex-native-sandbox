@@ -19,8 +19,8 @@ def main():
 
     print("Fetching translations... ", end="")
     sys.stdout.flush()
-    tx_init(token="1/066926bd75f0d9e52fce00c2208ac791ca0cd2c1",
-            languages=['en', 'el', 'de', 'es', 'fr', 'pt_BR'],
+    tx_init(token="1/ff0741fd8174546b4cf42c75ee9cc12f0b6af504",
+            languages=['en', 'el', 'de', 'fr'],
             missing_policy=MissingPolicy())
     tx.fetch_translations()
     print("Done\n")
@@ -118,14 +118,11 @@ def _get_language():
         'type': "list",
         'name': "language_name",
         'message': "What language would you like to translate to?",
-        'choices': ["Greek", "German", "Spanish", "French",
-                    "Portuguese (Brazil)"],
+        'choices': ["Greek", "German", "French"],
     }])
     return ({'Greek': "el",
              'German': "de",
-             'Spanish': "es",
-             'French': "fr",
-             'Portuguese (Brazil)': "pt_BR"}[answer['language_name']],
+             'French': "fr"}[answer['language_name']],
             answer['language_name'])
 
 
