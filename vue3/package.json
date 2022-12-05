@@ -1,5 +1,5 @@
 {
-  "name": "vue2js",
+  "name": "vue3js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,30 +9,30 @@
   "dependencies": {
     "@transifex/cli": "^5.0.0",
     "@transifex/native": "^5.0.0",
-    "@transifex/vue2": "^5.0.0",
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "@transifex/vue3": "^5.0.0",
+    "core-js": "^3.26.1",
+    "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@babel/eslint-parser": "^7.19.1",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "eslint": "^8.28.0",
+    "eslint-plugin-vue": "^9.7.0"
   },
   "eslintConfig": {
     "root": true,
     "env": {
       "node": true
     },
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
     "extends": [
       "plugin:vue/base"
     ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
     "rules": {}
   },
   "browserslist": [
