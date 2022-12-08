@@ -8,9 +8,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@transifex/cli": "^3.0.0",
-    "@transifex/native": "^3.0.0",
-    "@transifex/react": "^3.0.0",
+    "@transifex/cli": "^5.0.0",
+    "@transifex/native": "^5.0.0",
+    "@transifex/react": "^5.0.0",
     "expo": "^43.0.3",
     "expo-splash-screen": "^0.13.5",
     "expo-status-bar": "^1.1.0",
