@@ -30,7 +30,7 @@ export default function Home(props) {
         <div className="column">
           <h3>Static content</h3>
           <div>
-            <T _str="Hello world 2" />
+            <T _str="Hello world" />
           </div>
         </div>
         <div className="column">
