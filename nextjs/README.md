@@ -1,5 +1,5 @@
-This is a React application, bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app) and integrated
+This is a NextJS application, bootstrapped with
+[Create Next App](https://nextjs.org/docs/api-reference/create-next-app) and integrated
 with [Transifex Native](https://www.transifex.com/native/).
 
 ## Getting started
@@ -20,7 +20,7 @@ npm install
 
 # Will run the 'start' script from package.json, which compiles the application
 # and starts a development server
-npm run start
+npm run dev
 ```
 
 Now, you can visit the application in the browser (http://localhost:3000),
@@ -44,11 +44,6 @@ into the application, refresh and see the changes you made appear over-the-air
 (there may be a delay before the new translations become available to your
 application).
 
-### Customize the language picker
-
-Try writing your own language picker by following the
-[instructions](https://github.com/transifex/transifex-javascript/tree/master/packages/react#uselanguages-hook).
-
 ### Edit the content of the application and push
 
 Open `src/App.js` and try adding some new strings using the
@@ -66,5 +61,5 @@ Or, if you want to do it by hand using the
 npx txjs-cli push \
   --token=1/ff0741fd8174546b4cf42c75ee9cc12f0b6af504 \
   --secret=1/9bd7ad8531cf7e0c3faec7c1e523c20df9b12e32 \
-  src/
+  pages/
 ```

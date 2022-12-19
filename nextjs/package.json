@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@transifex/cli": "^5.0.2",
+    "@transifex/native": "^5.0.2",
+    "@transifex/react": "^5.0.2",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

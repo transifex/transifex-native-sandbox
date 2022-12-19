@@ -38,7 +38,7 @@ translated in real time.
 ### Edit translations
 
 Head over to the
-[linked transifex project](https://www.transifex.com/native-sandbox/main-native-sandbox/),
+[linked transifex project](https://www.transifex.com/transifex/native-sandbox/dashboard/),
 join a language team and help complete or edit the translations. Then head back
 into the application, refresh and see the changes you made appear over-the-air
 (there may be a delay before the new translations become available to your
