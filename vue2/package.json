@@ -7,9 +7,9 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@transifex/cli": "^5.0.0",
-    "@transifex/native": "^5.0.0",
-    "@transifex/vue2": "^5.0.0",
+    "@transifex/cli": "^5.4.0",
+    "@transifex/native": "^5.4.0",
+    "@transifex/vue2": "^5.4.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },

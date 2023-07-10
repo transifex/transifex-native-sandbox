@@ -6,9 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@transifex/cli": "^5.0.0",
-    "@transifex/native": "^5.0.0",
-    "@transifex/react": "^5.0.0",
+    "@transifex/cli": "^5.4.0",
+    "@transifex/native": "^5.4.0",
+    "@transifex/react": "^5.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "3.4.3"

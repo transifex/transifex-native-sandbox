@@ -1,6 +1,6 @@
 #!/bin/env sh
 if [ ! -d node_modules ]; then
   echo Installing dependencies
-  npm install
+  npm ci
 fi
-npm run start
+npm start

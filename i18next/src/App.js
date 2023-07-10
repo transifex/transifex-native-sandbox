@@ -15,6 +15,8 @@ i18n
     debug: true,
   });
 
+// i18n.changeLanguage('el');
+
 function App() {
   const { t } = useTranslation();
   const [string, setString] = useState("John Doe");

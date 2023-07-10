@@ -1263,16 +1263,16 @@
   resolved "https://registry.npmjs.org/@soda/get-current-script/-/get-current-script-1.0.2.tgz"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
-"@transifex/cli@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@transifex/cli/-/cli-5.0.0.tgz#23376317899211d0b8cd0fd91bd5b618bf5ab8d9"
-  integrity sha512-CVWq7BIFpZALHMdYf1vfqC0egaSPUnS+kYWuK6zchMLvVTpYJg+uoDFxokcCjQVIGulBpTTuxuRR5oMRnAajqQ==
+"@transifex/cli@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@transifex/cli/-/cli-5.4.0.tgz#69d1bbd6ad8fb5467b1eaf75488031911fef997a"
+  integrity sha512-LK8zpd8L0WXMny18u2SuhT5n+J5pAgeXQKYA6vMnDhxCvpk+6loSWOG6+6yvtHsHaWKZrqeabV1WgFUIMFXH+g==
   dependencies:
     "@babel/parser" "^7.20.3"
     "@babel/traverse" "^7.20.1"
     "@colors/colors" "^1.5.0"
     "@oclif/core" "^1.20.4"
-    "@transifex/native" "^5.0.0"
+    "@transifex/native" "^5.4.0"
     "@vue/compiler-sfc" "^3.2.45"
     angular-html-parser "^1.8.0"
     axios "^1.1.3"
@@ -1280,21 +1280,20 @@
     glob "^8.0.3"
     lodash "^4.17.21"
     pug "^3.0.2"
-    shelljs "^0.8.5"
 
-"@transifex/native@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@transifex/native/-/native-5.0.0.tgz#51de7a58ec6e868e0978298c44f8e817d7473f61"
-  integrity sha512-O0AHog+/BBfFLXR7JscUN70g+Zs63GPZAHuCnf1oQvamuxWRppjQKW5dCu2At+r0mlazTGrpqJDk1uhZ16Eo+g==
+"@transifex/native@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@transifex/native/-/native-5.4.0.tgz#fc96855752248cd1bc43f3d51f5f6b728c842ecd"
+  integrity sha512-8ZIWSSrnzuIlCQv0xOJlkiK1Yse4e5TaQuGyq1vE97jYDddZrxi8JMFHdsigWYYKmKK9GzwRKVccRHC9KWS6Wg==
   dependencies:
     "@messageformat/core" "^3.0.0"
     axios "^0.27.2"
     md5 "^2.3.0"
 
-"@transifex/vue2@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@transifex/vue2/-/vue2-5.0.0.tgz#c7eb048a1230dd57c61c252eb3151afe43888dd3"
-  integrity sha512-o3UAMk7GSk1dDj34t/jotydrdEp0hDysd0ZuhlSg0ZbK8TgXZKzHgL2yJRs8w3IqvdnO+Slwv6fVVqrMm+bNHA==
+"@transifex/vue2@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@transifex/vue2/-/vue2-5.4.0.tgz#a708805a78f81e770bfcc97a9d1d11915345f12f"
+  integrity sha512-FfEQl/qi5K+tkTWd2MfpVsAKvmAy7ZGO/EH8yQj4HLcMiO8BCFCj+NexgBr6VynnxvSw2kTDlMEt5eYFjWZrtQ==
 
 "@types/body-parser@*":
   version "1.19.2"
@@ -4659,7 +4658,7 @@ glob-to-regexp@^0.3.0:
   resolved "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.3.0.tgz"
   integrity sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4:
+glob@^7.0.3, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4:
   version "7.2.0"
   resolved "https://registry.npmjs.org/glob/-/glob-7.2.0.tgz"
   integrity sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==
@@ -5211,11 +5210,6 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
-
-interpret@^1.0.0:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/interpret/-/interpret-1.4.0.tgz"
-  integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -7636,13 +7630,6 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-rechoir@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz"
-  integrity sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
-  dependencies:
-    resolve "^1.1.6"
-
 redeyed@~2.1.0:
   version "2.1.1"
   resolved "https://registry.npmjs.org/redeyed/-/redeyed-2.1.1.tgz"
@@ -7813,7 +7800,7 @@ resolve-url@^0.2.1:
   resolved "https://registry.npmjs.org/resolve-url/-/resolve-url-0.2.1.tgz"
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
-resolve@^1.1.6, resolve@^1.10.0, resolve@^1.12.0, resolve@^1.14.2, resolve@^1.15.1:
+resolve@^1.10.0, resolve@^1.12.0, resolve@^1.14.2, resolve@^1.15.1:
   version "1.22.0"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.0.tgz"
   integrity sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==
@@ -8110,15 +8097,6 @@ shell-quote@^1.6.1:
   version "1.7.3"
   resolved "https://registry.npmjs.org/shell-quote/-/shell-quote-1.7.3.tgz"
   integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
-
-shelljs@^0.8.5:
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.8.5.tgz#de055408d8361bed66c669d2f000538ced8ee20c"
-  integrity sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==
-  dependencies:
-    glob "^7.0.0"
-    interpret "^1.0.0"
-    rechoir "^0.6.2"
 
 side-channel@^1.0.4:
   version "1.0.4"

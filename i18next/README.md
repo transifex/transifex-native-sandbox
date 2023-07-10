@@ -15,12 +15,12 @@ sh run.sh
 Or, by hand:
 
 ```sh
-# Will install all packages listed in package.json
-npm install
+# Will install all packages listed in package-lock.json
+npm ci
 
 # Will run the 'start' script from package.json, which compiles the application
 # and starts a development server
-npm run start
+npm start
 ```
 
 Now, you can visit the application in the browser (http://localhost:3000),
