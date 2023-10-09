@@ -31,7 +31,3 @@ DerivedData/
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
-
-### Transifex Sample App specific ignores
-Secrets.xcconfig
-

@@ -60,9 +60,13 @@
                               cache:nil
                       missingPolicy:compositePolicy
                         errorPolicy:nil
-                  renderingStrategy:TXRenderingStategyPlatform];
+                  renderingStrategy:TXRenderingStategyPlatform
+                         filterTags:nil
+                       filterStatus:nil];
     
     [TXNative fetchTranslations:nil
+                           tags:nil
+                         status:nil
               completionHandler:nil];
     
     return YES;

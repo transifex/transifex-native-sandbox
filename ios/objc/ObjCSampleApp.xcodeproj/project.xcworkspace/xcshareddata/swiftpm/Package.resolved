@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "transifex",
-        "repositoryURL": "https://github.com/transifex/transifex-swift/",
-        "state": {
-          "branch": null,
-          "revision": "a326fbf8bc8023b8cc09f31beffebf82faadeebc",
-          "version": "0.1.0"
-        }
+  "pins" : [
+    {
+      "identity" : "transifex-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/transifex/transifex-swift/",
+      "state" : {
+        "revision" : "4490b3ed7abae304e9bb3fed02882320b1df224e",
+        "version" : "2.0.1"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
