@@ -7,20 +7,20 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@transifex/cli": "^5.4.0",
-    "@transifex/native": "^5.4.0",
-    "@transifex/vue3": "^5.4.0",
-    "core-js": "^3.31.1",
+    "@transifex/cli": "^7.0.1",
+    "@transifex/native": "^7.0.1",
+    "@transifex/vue3": "^7.0.1",
+    "core-js": "^3.35.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.7",
+    "@babel/eslint-parser": "^7.23.9",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.44.0",
-    "eslint-plugin-vue": "^9.15.1"
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1"
   },
   "eslintConfig": {
     "root": true,

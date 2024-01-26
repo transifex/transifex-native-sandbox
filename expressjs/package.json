@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@transifex/cli": "^5.4.0",
-    "@transifex/express": "^5.4.0",
-    "@transifex/native": "^5.4.0",
+    "@transifex/cli": "^7.0.1",
+    "@transifex/express": "^7.0.1",
+    "@transifex/native": "^7.0.1",
     "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
