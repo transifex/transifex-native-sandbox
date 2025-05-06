@@ -1,0 +1,42 @@
+{
+  "originHash" : "0b266888c9c6054b35ef274bffc8b2fe02a0eddc81ed32803209ca810499841f",
+  "pins" : [
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    },
+    {
+      "identity" : "swiftlintplugins",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SimplyDanny/SwiftLintPlugins",
+      "state" : {
+        "revision" : "8545ddf4de043e6f2051c5cf204f39ef778ebf6b",
+        "version" : "0.59.1"
+      }
+    },
+    {
+      "identity" : "transifex-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/transifex/transifex-swift",
+      "state" : {
+        "branch" : "feature/custom-bundle",
+        "revision" : "8493e1286cdf1aceeebe3aa84de371aa02497059"
+      }
+    },
+    {
+      "identity" : "transifex-swift-macro",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/transifex/transifex-swift-macro/",
+      "state" : {
+        "branch" : "master",
+        "revision" : "379009a20d48c6f1a9f417a7fa16cef462f8e672"
+      }
+    }
+  ],
+  "version" : 3
+}
