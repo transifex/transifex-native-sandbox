@@ -3,7 +3,7 @@ from django.shortcuts import render
 from transifex.native.django import t, ut
 
 
-def django_view(request):
+def home(request):
     params = {'string': "John Doe", 'number': 1, 'choice': "female"}
     params.update(request.GET.items())
 
