@@ -8,4 +8,4 @@ source venv/bin/activate
 if [ ! -d venv/lib/python*/site-packages/transifex ]; then
   pip install -r requirements.txt
 fi
-python3 manage.py transifex push --verbose
+python3 manage.py transifex push
