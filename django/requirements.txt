@@ -1,3 +1,6 @@
-Django==1.11.18
+Django==4.2.25
 transifex-python==3.5.0
+# To test transifex python with a specific commit
+# transifex-python @ git+https://github.com/transifex/transifex-python.git@76038849e7c5392fa8330fd799b798b8f83f55c6
+
 
