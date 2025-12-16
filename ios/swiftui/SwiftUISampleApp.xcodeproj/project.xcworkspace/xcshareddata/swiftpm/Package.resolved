@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/transifex/transifex-swift",
       "state" : {
-        "revision" : "2b0f13df452716a56ff5915cf60b8875b5cda2c2",
-        "version" : "2.0.3"
+        "revision" : "698c9a70fa80ffd87f41be1ce4bad6525f357215",
+        "version" : "2.0.9"
       }
     }
   ],
