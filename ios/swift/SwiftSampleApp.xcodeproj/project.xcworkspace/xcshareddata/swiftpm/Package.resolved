@@ -1,14 +1,15 @@
 {
+  "originHash" : "b441976e94b5c1386ba02ad1983f5a35a26b64385e3c233b2d307d101b6141e0",
   "pins" : [
     {
       "identity" : "transifex-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/transifex/transifex-swift/",
       "state" : {
-        "revision" : "4490b3ed7abae304e9bb3fed02882320b1df224e",
-        "version" : "2.0.1"
+        "revision" : "698c9a70fa80ffd87f41be1ce4bad6525f357215",
+        "version" : "2.0.9"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

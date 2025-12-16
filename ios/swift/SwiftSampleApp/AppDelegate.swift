@@ -27,15 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                         appLocales: ["en", "fr", "de", "sl"],
                                         currentLocaleProvider: CustomLocaleProvider())
         
-        TXNative.initialize(
-            locales: localeState,
-            token: transifexToken,
-            secret: nil,
-            missingPolicy: TXCompositePolicy(
+        TXNativeBuilder()
+            .setLocales(localeState)
+            .setToken(transifexToken)
+            .setMissingPolicy(TXCompositePolicy(
                 TXPseudoTranslationPolicy(),
-                TXWrappedStringPolicy(start: "[", end: "]")
-            )
-        )
+                TXWrappedStringPolicy(start: "[", end: "]")))
+            .build()
+
         TXNative.fetchTranslations()
         
         return true

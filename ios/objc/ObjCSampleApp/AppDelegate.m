@@ -52,17 +52,11 @@
         wrappedStringPolicy
     ]];
     
-    [TXNative initializeWithLocales:localeState
-                              token:transifexToken
-                             secret:nil
-                            cdsHost:nil
-                            session:nil
-                              cache:nil
-                      missingPolicy:compositePolicy
-                        errorPolicy:nil
-                  renderingStrategy:TXRenderingStategyPlatform
-                         filterTags:nil
-                       filterStatus:nil];
+    [[[[TXNativeBuilder.new
+        setLocales:localeState]
+        setToken:transifexToken]
+        setMissingPolicy:compositePolicy]
+        build];
     
     [TXNative fetchTranslations:nil
                            tags:nil

@@ -383,8 +383,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/transifex/transifex-swift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.3;
+				kind = exactVersion;
+				version = 2.0.9;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -21,12 +21,12 @@ struct SwiftUISampleApp: App {
         let transifexToken = Bundle.main.infoDictionary!["TRANSIFEX_TOKEN"] as! String
 
         // Initialize Transifex Native
-        TXNative.initialize(
-            locales: TXLocaleState(sourceLocale: "en",
-                                   appLocales: ["en", "fr", "de", "sl"],
-                                   currentLocaleProvider: CustomLocaleProvider()),
-            token: transifexToken
-        )
+        TXNativeBuilder()
+            .setLocales(TXLocaleState(sourceLocale: "en",
+                                     appLocales: ["en", "fr", "de", "sl"],
+                                     currentLocaleProvider: CustomLocaleProvider()))
+            .setToken(transifexToken)
+            .build()
         TXNative.fetchTranslations()
     }
     var body: some Scene {
