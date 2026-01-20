@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%lld %lld</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1$#@arg1@ %2$#@arg2@</string>
+		<key>arg1</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%1$lld person has</string>
+			<key>other</key>
+			<string>%1$lld people have</string>
+		</dict>
+		<key>arg2</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%2$lld item</string>
+			<key>other</key>
+			<string>%2$lld items</string>
+		</dict>
+	</dict>
+	<key>%lld Books</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld Book</string>
+			<key>other</key>
+			<string>%lld Books</string>
+		</dict>
+	</dict>
+	<key>This device has %lld stored</key>
+	<dict>
+		<key>NSStringDeviceSpecificRuleType</key>
+		<dict>
+			<key>iphone</key>
+			<dict>
+				<key>NSStringLocalizedFormatKey</key>
+				<string>%#@value@</string>
+				<key>value</key>
+				<dict>
+					<key>NSStringFormatSpecTypeKey</key>
+					<string>NSStringPluralRuleType</string>
+					<key>NSStringFormatValueTypeKey</key>
+					<string>lld</string>
+					<key>one</key>
+					<string>This iPhone has %lld person stored</string>
+					<key>other</key>
+					<string>This iPhone has %lld people stored</string>
+				</dict>
+			</dict>
+			<key>mac</key>
+			<dict>
+				<key>NSStringLocalizedFormatKey</key>
+				<string>%#@value@</string>
+				<key>value</key>
+				<dict>
+					<key>NSStringFormatSpecTypeKey</key>
+					<string>NSStringPluralRuleType</string>
+					<key>NSStringFormatValueTypeKey</key>
+					<string>lld</string>
+					<key>one</key>
+					<string>This Mac has %lld person stored</string>
+					<key>other</key>
+					<string>This Mac has %lld people stored</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	<key>This is a device</key>
+	<dict>
+		<key>NSStringDeviceSpecificRuleType</key>
+		<dict>
+			<key>ipad</key>
+			<string>This is an iPad</string>
+			<key>iphone</key>
+			<string>This is an iPhone</string>
+			<key>mac</key>
+			<string>This is a Mac</string>
+			<key>other</key>
+			<string>This is a device</string>
+		</dict>
+	</dict>
+	<key>unit-time.%d-minute(s)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d minute</string>
+			<key>other</key>
+			<string>%d minutes</string>
+		</dict>
+	</dict>
+	<key>unit-time.%u-minute(s)</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>one</key>
+			<string>%u minute</string>
+			<key>other</key>
+			<string>%u minutes</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -4,8 +4,10 @@
 <img src="https://img.shields.io/badge/platforms-iOS-lightgrey.svg">
 </p>
 
-This repository hosts three iOS sample apps written in Swift, Objective-C and SwiftUI
+This repository hosts four iOS sample apps written in Swift, Objective-C and SwiftUI
 that make use of the [Transifex iOS SDK](https://github.com/transifex/transifex-swift/).
+
+The fourth sample app makes use of the [custom bundle](https://github.com/transifex/transifex-swift/tree/2.0.9-alpha?tab=readme-ov-file#custom-bundle-approach) SDK initialization (experimental).
 
 ## Usage
 
@@ -17,4 +19,5 @@ You will also have to provide the proper source and app locales during the initi
 of the SDK (make sure to update the `CustomLocaleProvider` class as well).
 
 ## License
+
 Licensed under Apache License 2.0, see [LICENSE](LICENSE) file.
